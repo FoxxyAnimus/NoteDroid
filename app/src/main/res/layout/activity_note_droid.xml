@@ -1,0 +1,66 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#63B8FF"
+    tools:context=".NoteDroid" >
+    
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+        
+        <Button
+            android:id="@+id/Main.ViewNotesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/view"
+            android:minHeight="125dp"
+            android:minWidth="125dp"
+            android:text="@string/Main.ViewNotes"
+            android:onClick="openNoteList">
+        </Button>
+        
+        <Button
+            android:id="@+id/Main.NewNoteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/new_note"
+            android:minHeight="125dp"
+            android:minWidth="125dp"
+            android:text="@string/Main.NewNote"
+            android:onClick="openNewNote" >
+        </Button>
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+        
+        <Button
+            android:id="@+id/main.ViewPreferencesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/preferences"
+            android:minHeight="125dp"
+            android:minWidth="125dp"
+            android:text="@string/Main.Preferences" >
+        </Button>
+        
+        <Button
+            android:id="@+id/Main.ViewAboutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/about"
+            android:minHeight="125dp"
+            android:minWidth="125dp"
+            android:text="@string/Main.About"
+            android:onClick="openAboutDialog" >
+        </Button>
+    </TableRow>
+</TableLayout>

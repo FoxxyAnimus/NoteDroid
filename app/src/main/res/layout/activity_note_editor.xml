@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/NoteEditor.NoteName"
+            android:inputType="none" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:id="@+id/NoteEditor.Body"
+        android:gravity="top|left"
+        android:inputType="textCapSentences|textMultiLine" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:minWidth="125dp"
+            android:text="@string/NoteEditor.SaveMenu"
+            android:drawableLeft="@drawable/save"
+            android:drawablePadding="6dp"
+            android:onClick="saveAndExit"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:minWidth="125dp"
+            android:text="@string/NoteEditor.CancelMenu"
+            android:drawableLeft="@drawable/cancel"
+            android:drawablePadding="6dp"
+            android:onClick="exitWithoutSave"/>
+    </TableRow>
+
+</LinearLayout>
